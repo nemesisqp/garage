@@ -7,4 +7,4 @@ EXPOSE 3903
 
 COPY config.toml /etc/garage/config.toml
 
-CMD ["garage", "server"]
+CMD ["/garage", "server"]

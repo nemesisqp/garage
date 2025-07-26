@@ -8,8 +8,10 @@ services:
     image: ghcr.io/nemesisqp/garage:latest
     container_name: garage
     volumes:
-      - garage-data:/var/lib/garage
+      - garage-data:/etc/garage
     restart: unless-stopped
+    # ports:
+    #   - 3900:3900
     environment:
       - GARAGE_ADMIN_TOKEN=${GARAGE_ADMIN_TOKEN}
       - GARAGE_METRICS_TOKEN=${GARAGE_METRICS_TOKEN}
