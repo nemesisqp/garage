@@ -1,0 +1,23 @@
+replication_factor = 3
+consistency_mode = "consistent"
+
+metadata_dir = "/garage/meta"
+data_dir = "/garage/data"
+metadata_fsync = true
+data_fsync = true
+disable_scrub = false
+use_local_tz = false
+metadata_auto_snapshot_interval = "6h"
+
+compression_level = 6
+allow_punycode = true
+
+rpc_bind_addr = "[::]:3901"
+rpc_public_addr = "localhost:3901" # Required
+
+[s3_api]
+s3_region = "garage"
+api_bind_addr = "[::]:3900"
+
+[admin] # Required
+api_bind_addr = "[::]:3903"
