@@ -1,5 +1,22 @@
-node_modules
-npm-debug.log
-.DS_Store
+# Git history and config
+.git
+.gitignore
+
+# Docker files that are not needed inside the image
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# The rule for your original request
 **/.gitkeep
-    
+
+# Other files from your .gitignore that are good to exclude
+# from the Docker build context.
+logs
+*.log
+node_modules/
+.env
+.env.*
+!.env.example
+.cache/
+.idea/
