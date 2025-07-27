@@ -1,4 +1,4 @@
-replication_factor = 3
+replication_factor = 1
 consistency_mode = "consistent"
 
 metadata_dir = "/var/lib/garage/meta"
@@ -9,7 +9,7 @@ metadata_fsync = true
 data_fsync = true
 disable_scrub = false
 use_local_tz = false
-metadata_auto_snapshot_interval = "6h"
+metadata_auto_snapshot_interval = "24h"
 
 compression_level = 6
 allow_punycode = true
