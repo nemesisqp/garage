@@ -21,5 +21,10 @@ rpc_public_addr = "localhost:3901" # Required
 s3_region = "garage"
 api_bind_addr = "[::]:3900"
 
+[s3_web]
+bind_addr = "[::]:3902"
+root_domain = ".web.garage"
+add_host_to_metrics = true
+
 [admin] # Required
 api_bind_addr = "[::]:3903"

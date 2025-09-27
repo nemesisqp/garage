@@ -12,6 +12,7 @@ services:
     restart: unless-stopped
     # ports:
     #   - 3900:3900
+    #   - 3902:3902
     environment:
       - GARAGE_ADMIN_TOKEN=${GARAGE_ADMIN_TOKEN}
       - GARAGE_METRICS_TOKEN=${GARAGE_METRICS_TOKEN}
