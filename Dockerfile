@@ -1,4 +1,4 @@
-FROM dxflrs/garage:v2.1.0
+FROM dxflrs/garage:v2.3.0
 
 EXPOSE 3900
 EXPOSE 3901
