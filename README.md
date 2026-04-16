@@ -68,7 +68,7 @@ services:
 
 # release for git CI build
 ```bash
-TAG="2.3.0"
+TAG="v2.3.0"
 
 git add .
 git commit -m "$TAG"
@@ -79,11 +79,11 @@ git push origin $TAG
 
 # rollback failed tag and repush
 ```bash
-TAG="2.3.0"
+TAG="v2.3.0"
 git push origin --delete $TAG
 git tag -d $TAG
 git add .
-git commit -m "H$TAG"
+git commit -m "$TAG"
 git tag $TAG
 git push
 git push origin $TAG
