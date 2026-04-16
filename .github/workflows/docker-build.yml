@@ -3,7 +3,7 @@ name: Build and Push Multi-Arch Docker Image to GHCR
 on:
   push:
     tags:
-      - 'pg*'
+      - 'v[0-9]*'
 
 jobs:
   build:
