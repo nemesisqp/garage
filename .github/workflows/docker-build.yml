@@ -37,8 +37,8 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/${{ github.repository_owner }}/postgres:${{ env.TAG_NAME }}
-            ghcr.io/${{ github.repository_owner }}/postgres:latest
+            ghcr.io/${{ github.repository_owner }}/garage:${{ env.TAG_NAME }}
+            ghcr.io/${{ github.repository_owner }}/garage:latest
           # --- START: ADD THESE LINES FOR CACHING ---
           cache-from: type=gha
           cache-to: type=gha,mode=max
